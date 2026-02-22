@@ -4,7 +4,7 @@
 			"type": "http",
 			"url": "https://mcp.clickup.com/mcp",
 			"headers": {
-				"Authorization": "Bearer pk_94682452_N3SZAK56GTTHNU1UKBU16U80PIPY9WZ6"
+				"Authorization": "Bearer <your_clickup_api_token>"
 			}
 		},
 		"com.figma.mcp/mcp": {
