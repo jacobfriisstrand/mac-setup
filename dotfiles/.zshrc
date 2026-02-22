@@ -33,6 +33,7 @@ alias o="open ."
 # -----------------
 
 alias gc='git checkout'
+alias gcb='git checkout -b'
 alias gp='git pull'
 alias gs='git add . && git stash'
 alias gsp='git stash pop'
