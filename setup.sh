@@ -15,12 +15,12 @@ echo "\nInstalling apps and CLI tools..."
 xargs brew install < ~/mac-setup/apps/installs.txt
 
 # 4. Dotfiles — .zshrc references NVM and ~/scripts, so both must exist first
-echo "\nLinking dotfiles..."
+echo "\nCopying dotfiles..."
 mkdir -p ~/scripts
 DOTFILES=(.zshrc .gitconfig .gitignore)
 for dotfile in ${DOTFILES[*]}; do
     rm -f ~/$dotfile
-    ln -s ~/mac-setup/dotfiles/$dotfile ~/$dotfile
+    cp ~/mac-setup/dotfiles/$dotfile ~/$dotfile
 done
 
 # 5. VS Code extensions — needs VS Code installed from step 3
@@ -47,7 +47,7 @@ for target in ${TARGETS[@]}; do
     for skill in "$SKILLS_SRC"/*/; do
         skill_name=$(basename "$skill")
         rm -rf "$target/$skill_name"
-        ln -s "$SKILLS_SRC/$skill_name" "$target/$skill_name"
+        cp -R "$SKILLS_SRC/$skill_name" "$target/$skill_name"
     done
 done
 
