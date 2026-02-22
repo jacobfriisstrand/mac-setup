@@ -1,0 +1,51 @@
+## My personal Mac setup and IDE config.
+
+## IDE Settings
+
+```
+{
+  "codesnap.backgroundColor": "#000000",
+  "codesnap.containerPadding": "0px",
+  "codesnap.showWindowControls": false,
+  "codesnap.transparentBackground": true,
+  "search.exclude": {
+      "**/node_modules": true
+  },
+  "breadcrumbs.enabled": false,
+  "terminal.integrated.fontSize": 14,
+  "editor.fontFamily": "'Cascadia Code'",
+  "editor.minimap.enabled": false,
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "comment.block"
+        ],
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#dc2cdc"
+        }
+      },
+    ]
+  },
+  "workbench.sideBar.location": "right",
+  "workbench.colorCustomizations": {
+      "editor.background": "#000000",
+      "sideBar.background": "#000000"
+  },
+}
+```
+
+## Keybindings
+
+```
+[
+{
+    "key": "shift+cmd+w",
+    "command": "workbench.action.closeOtherEditors"
+  },
+]
+```

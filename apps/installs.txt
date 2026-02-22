@@ -1,0 +1,23 @@
+node
+--cask raycast
+arc
+google-chrome
+firefox
+visual-studio-code
+warp
+cursor
+slack
+rectangle
+cleanshot
+sonos
+spotify
+docker-desktop
+yoink
+readdle-spark
+stats
+glab
+--cask claude-code
+mole
+yarn
+biome
+--cask font-cascadia-code

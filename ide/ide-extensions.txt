@@ -1,0 +1,17 @@
+4regab.tasksync-chat
+usernamehw.errorlens
+mk12.better-git-line-blame
+Vue.volar
+esbenp.prettier-vscode
+biomejs.biome
+astro-build.astro-vscode
+yoavbls.pretty-ts-errors
+bradlc.vscode-tailwindcss
+Prisma.prisma
+adpyke.codesnap
+rangav.vscode-thunder-client
+vunguyentuan.vscode-postcss
+dbaeumer.vscode-eslint
+formulahendry.auto-rename-tag
+quicktype.quicktype
+CodeRabbit.coderabbit-vscode

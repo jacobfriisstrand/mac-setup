@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Battery_barChart_position</key>
+	<integer>3</integer>
+	<key>Battery_batteryDetails_position</key>
+	<integer>4</integer>
+	<key>Battery_battery_position</key>
+	<integer>1</integer>
+	<key>Battery_label_position</key>
+	<integer>2</integer>
+	<key>Battery_mini_position</key>
+	<integer>0</integer>
+	<key>Battery_oneView</key>
+	<true/>
+	<key>Battery_widget</key>
+	<string>mini,battery</string>
+	<key>Bluetooth_label_position</key>
+	<integer>1</integer>
+	<key>Bluetooth_stack_position</key>
+	<integer>0</integer>
+	<key>Bluetooth_state</key>
+	<false/>
+	<key>Bluetooth_widget</key>
+	<string></string>
+	<key>Clock_calendar</key>
+	<true/>
+	<key>Clock_label_position</key>
+	<integer>1</integer>
+	<key>Clock_list</key>
+	<data>
+	W3siaWQiOiJENDAwMDZDQS0yRTRGLTRBOUEtOUI2OC05M0IwNjgzNzFDQzMiLCJuYW1l
+	IjoiTG9jYWwgdGltZSIsImZvcm1hdCI6ImRkLU1NLXl5eXkgSEg6bW0iLCJ0eiI6Imxv
+	Y2FsIiwiZW5hYmxlZCI6dHJ1ZX1d
+	</data>
+	<key>Clock_stack_position</key>
+	<integer>0</integer>
+	<key>Clock_state</key>
+	<true/>
+	<key>Clock_widget</key>
+	<string>sensors</string>
+	<key>LaunchAtLoginNext</key>
+	<true/>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{880, 448}</string>
+	<key>NSNavPanelExpandedStateForSaveMode</key>
+	<true/>
+	<key>NSStatusItem Preferred Position Battery</key>
+	<real>241</real>
+	<key>NSStatusItem Preferred Position CPU_mini</key>
+	<real>598</real>
+	<key>NSStatusItem Preferred Position Clock_sensors</key>
+	<real>86</real>
+	<key>NSStatusItem Preferred Position Disk_mini</key>
+	<real>504</real>
+	<key>NSStatusItem Preferred Position Network_speed</key>
+	<real>433</real>
+	<key>NSStatusItem Preferred Position RAM_mini</key>
+	<real>551</real>
+	<key>NSToolbar Configuration eu.exelban.Stats.Settings.Toolbar</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>1</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<true/>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
+	<key>runAtLoginInitialized</key>
+	<true/>
+	<key>setupProcess</key>
+	<true/>
+	<key>support_ts</key>
+	<integer>1771656114</integer>
+	<key>updater_check_ts</key>
+	<integer>1771656020</integer>
+	<key>version</key>
+	<string>2.11.67</string>
+</dict>
+</plist>
