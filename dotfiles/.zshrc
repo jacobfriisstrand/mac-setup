@@ -40,3 +40,8 @@ alias gsp='git stash pop'
 alias gri='git rebase -i'
 alias gpf='git push --force-with-lease'
 alias gpdev='git pull origin development --rebase'
+
+# -----------------
+# ClickUp API Token
+# -----------------
+export CLICKUP_API_TOKEN="<your_clickup_api_token>"

@@ -22,3 +22,4 @@ yarn
 biome
 --cask font-cascadia-code
 gum
+beeper
