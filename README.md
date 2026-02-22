@@ -1,51 +1,16 @@
-## My personal Mac setup and IDE config.
+## Mac Setup
 
-## IDE Settings
+Personal macOS development environment setup. Run `setup.sh` to:
 
-```
-{
-  "codesnap.backgroundColor": "#000000",
-  "codesnap.containerPadding": "0px",
-  "codesnap.showWindowControls": false,
-  "codesnap.transparentBackground": true,
-  "search.exclude": {
-      "**/node_modules": true
-  },
-  "breadcrumbs.enabled": false,
-  "terminal.integrated.fontSize": 14,
-  "editor.fontFamily": "'Cascadia Code'",
-  "editor.minimap.enabled": false,
-  "editor.fontLigatures": true,
-  "editor.fontSize": 13,
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": [
-          "comment",
-          "comment.block"
-        ],
-        "settings": {
-          "fontStyle": "italic",
-          "foreground": "#dc2cdc"
-        }
-      },
-    ]
-  },
-  "workbench.sideBar.location": "right",
-  "workbench.colorCustomizations": {
-      "editor.background": "#000000",
-      "sideBar.background": "#000000"
-  },
-}
-```
+1. Install Homebrew and NVM
+2. Install apps and CLI tools (`apps/installs.txt`)
+3. Symlink dotfiles (`.zshrc`, `.gitconfig`, `.gitignore`)
+4. Install VS Code extensions (`ide/ide-extensions.txt`)
+5. Copy VS Code settings and keybindings (`ide/settings.json`, `ide/keybindings.json`)
+6. Copy Stats menubar settings
+7. Symlink IDE skills to `~/.claude/skills` and `~/.copilot/skills`
 
-## Keybindings
-
-```
-[
-  {
-    "key": "shift+cmd+w",
-    "command": "workbench.action.closeOtherEditors"
-  },
-]
+```sh
+git clone https://github.com/jacobfriisstrand/mac-setup.git ~/mac-setup
+cd ~/mac-setup && ./setup.sh
 ```
