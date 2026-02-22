@@ -43,7 +43,7 @@
 
 ```
 [
-{
+  {
     "key": "shift+cmd+w",
     "command": "workbench.action.closeOtherEditors"
   },
