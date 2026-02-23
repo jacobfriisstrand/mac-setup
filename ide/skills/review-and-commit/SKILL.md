@@ -5,7 +5,7 @@ description: Run CodeRabbit CLI to review uncommitted changes, fix critical issu
 
 ## Step 1: Run CodeRabbit review
 
-- Run `coderabbit --prompt-only --type uncommitted` with a **10-minute timeout**
+- Run `coderabbit --plain --prompt-only --type uncommitted` with a **10-minute timeout**
 - **CRITICAL: Do NOT run this in the background. Do NOT proceed until CodeRabbit finishes. Do NOT stop it early. Wait for complete output before moving on.**
 
 ## Step 2: Fix critical issues
@@ -16,7 +16,7 @@ description: Run CodeRabbit CLI to review uncommitted changes, fix critical issu
 
 ## Step 3: Run CodeRabbit review again
 
-- Run `coderabbit --prompt-only --type uncommitted` a second time with a **10-minute timeout**
+- Run `coderabbit --plain --prompt-only --type uncommitted` a second time with a **10-minute timeout**
 - **CRITICAL: Do NOT run this in the background. Do NOT proceed until CodeRabbit finishes. Do NOT stop it early. Wait for complete output before moving on.**
 
 ## Step 4: Suggest atomic commits

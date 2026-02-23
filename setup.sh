@@ -34,11 +34,21 @@ mkdir -p "$VSCODE_DIR"
 ln -sf ~/mac-setup/ide/settings.json "$VSCODE_DIR/settings.json"
 ln -sf ~/mac-setup/ide/keybindings.json "$VSCODE_DIR/keybindings.json"
 
-# 7. Stats menubar settings
+# 7. Generate TaskSync reusable prompts from skill files
+echo "\nGenerating TaskSync reusable prompts..."
+PROMPTS_JSON="[]"
+for skill in ~/mac-setup/ide/skills/*/SKILL.md; do
+    skill_name=$(basename "$(dirname "$skill")")
+    PROMPTS_JSON=$(jq --arg name "$skill_name" --rawfile prompt "$skill" -n --argjson arr "$PROMPTS_JSON" '$arr + [{"name": $name, "prompt": $prompt}]')
+done
+jq --argjson prompts "$PROMPTS_JSON" '.["tasksync.reusablePrompts"] = $prompts' ~/mac-setup/ide/settings.json > ~/mac-setup/ide/settings.json.tmp
+mv ~/mac-setup/ide/settings.json.tmp ~/mac-setup/ide/settings.json
+
+# 8. Stats menubar settings
 echo "\nCopying Stats settings..."
 cp ~/mac-setup/menubar-stats-settings/Stats.plist ~/Library/Preferences/eu.exelban.Stats.plist
 
-# 8. IDE skills — symlinked so edits stay in sync
+# 9. IDE skills — symlinked so edits stay in sync
 echo "\nLinking IDE skills..."
 SKILLS_SRC=~/mac-setup/ide/skills
 TARGETS=(~/.claude/skills ~/.copilot/skills)
