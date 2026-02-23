@@ -30,5 +30,6 @@
   "workbench.colorCustomizations": {
     "editor.background": "#000000",
     "sideBar.background": "#000000"
-  }
+  },
+  "git.confirmSync": false
 }
