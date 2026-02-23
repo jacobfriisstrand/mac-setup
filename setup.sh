@@ -27,19 +27,19 @@ done
 echo "\nInstalling VS Code extensions..."
 xargs -n 1 code --install-extension < ~/mac-setup/ide/ide-extensions.txt
 
-# 6. VS Code settings and keybindings
-echo "\nCopying VS Code settings..."
+# 6. VS Code settings and keybindings (symlinked so edits stay in sync)
+echo "\nLinking VS Code settings..."
 VSCODE_DIR=~/Library/Application\ Support/Code/User
 mkdir -p "$VSCODE_DIR"
-cp ~/mac-setup/ide/settings.json "$VSCODE_DIR/settings.json"
-cp ~/mac-setup/ide/keybindings.json "$VSCODE_DIR/keybindings.json"
+ln -sf ~/mac-setup/ide/settings.json "$VSCODE_DIR/settings.json"
+ln -sf ~/mac-setup/ide/keybindings.json "$VSCODE_DIR/keybindings.json"
 
 # 7. Stats menubar settings
 echo "\nCopying Stats settings..."
 cp ~/mac-setup/menubar-stats-settings/Stats.plist ~/Library/Preferences/eu.exelban.Stats.plist
 
-# 8. IDE skills — needs Claude Code / Copilot installed from step 3
-echo "\nSetting up IDE skills..."
+# 8. IDE skills — symlinked so edits stay in sync
+echo "\nLinking IDE skills..."
 SKILLS_SRC=~/mac-setup/ide/skills
 TARGETS=(~/.claude/skills ~/.copilot/skills)
 for target in ${TARGETS[@]}; do
@@ -47,7 +47,7 @@ for target in ${TARGETS[@]}; do
     for skill in "$SKILLS_SRC"/*/; do
         skill_name=$(basename "$skill")
         rm -rf "$target/$skill_name"
-        cp -R "$SKILLS_SRC/$skill_name" "$target/$skill_name"
+        ln -sf "$SKILLS_SRC/$skill_name" "$target/$skill_name"
     done
 done
 
