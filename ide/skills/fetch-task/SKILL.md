@@ -26,3 +26,9 @@ Follow these rules while implementing:
 - **Figma vs codebase** — If a translation differs from Figma, edit it to match Figma
 - **Backend tests** — Run `make prepare-tests` before running tests via `docker exec blueventure_php`
 - **Framework conventions** — Use latest Vue + Laravel best practices and project skills, but this skill's rules always win
+
+## Rules
+
+- **CRITICAL: Do NOT proceed until you have a clear understanding of the task requirements.** If anything is unclear, ask for clarification.
+- **CRITICAL: Do NOT start coding until you have a clear plan for how to solve the task.** This includes understanding the requirements, identifying necessary changes, and how to implement them.
+- **CRITICAL: Do NOT commit any changes in this skill AT ALL.** This skill is only for fetching and solving the task. Committing changes is handled in the `review-and-commit` skill.
