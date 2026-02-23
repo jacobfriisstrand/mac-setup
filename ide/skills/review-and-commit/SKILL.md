@@ -14,8 +14,9 @@ description: Run CodeRabbit CLI to review uncommitted changes, fix critical issu
 - **Fix major and critical issues only** — ignore nits and minor suggestions
 - Implement the fixes
 
-## Step 3: Run CodeRabbit review again
+## Step 3: Run CodeRabbit review again (only if issues were found)
 
+- **Skip this step entirely if the first review found no critical issues.**
 - Run `coderabbit --plain --prompt-only --type uncommitted` a second time with a **10-minute timeout**
 - **CRITICAL: Do NOT run this in the background. Do NOT proceed until CodeRabbit finishes. Do NOT stop it early. Wait for complete output before moving on.**
 
