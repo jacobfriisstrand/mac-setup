@@ -23,3 +23,4 @@ biome
 --cask font-cascadia-code
 gum
 beeper
+--cask google-drive

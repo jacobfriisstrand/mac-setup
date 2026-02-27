@@ -25,6 +25,7 @@ Follow these rules while implementing:
 - **Translations** — No hardcoded user-facing strings. Use `lang/en` files. Never edit `resources/js/i18n/en.json` (auto-generated). Never add translation fallbacks (they are deterministic).
 - **Figma vs codebase** — If a translation differs from Figma, edit it to match Figma
 - **Backend tests** — Run `make prepare-tests` before running tests via `docker exec blueventure_php`
+- **Frontend testing** — Never run `yarn build` as a test step
 - **Framework conventions** — Use latest Vue + Laravel best practices and project skills, but this skill's rules always win
 
 ## Rules
